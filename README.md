@@ -1,4 +1,4 @@
-# Python3.7 Azure Eventhub 1.3.2 Events Sender Rreceiver
+# Python3.7 Azure Eventhub 1.3.2 - Events Sender Rreceiver
 ## Description
 several python 3.7 application to send or receive events to or from an Azure Event Hub.   
 ## Warnings
