@@ -27,7 +27,7 @@ KEY = eventcfg.key
 
 CONSUMER_GROUP = "$default"
 OFFSET = Offset("-1")
-PARTITION = "1"
+PARTITION = "0"
 
 total = 0
 last_sn = -1
@@ -40,7 +40,7 @@ try:
     start_time = time.time()
     print("[")
     index=0
-    for event_data in receiver.receive(timeout=100):
+    for event_data in receiver.receive(timeout=1000):
         index+=1
         if index==0:
             print('"Received":{}'.format(event_data.body_as_str(encoding='UTF-8')))
